@@ -1,0 +1,31 @@
+name: Bug
+description: Something that worked and broke
+type: Bug
+projects: ["open-native/2"]
+body:
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happens
+      description: The wrong behavior, with the exact error or output.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected
+      description: What should happen instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps with the exact commands. Say when it started, if known.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: One `- [ ]` per line, each checkable by a command or an observation. Include the reproduction no longer failing.
+    validations:
+      required: true

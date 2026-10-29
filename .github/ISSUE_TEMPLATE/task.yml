@@ -1,0 +1,24 @@
+name: Task
+description: Operational work with no new capability
+type: Task
+projects: ["open-native/2"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What needs to be done and why now.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: One `- [ ]` per line, each checkable by a command or an observation.
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of scope
+      description: What this issue will not do, one `- ` per line.

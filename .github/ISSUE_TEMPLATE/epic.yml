@@ -1,0 +1,26 @@
+name: Epic
+description: An initiative spanning several issues, linked as sub-issues
+type: Epic
+projects: ["open-native/2"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why this initiative exists and what it changes. Link the PPS or PRD when there is one.
+    validations:
+      required: true
+  - type: textarea
+    id: goals
+    attributes:
+      label: Goals
+      description: What must be true when the epic is done, one `- ` per goal.
+    validations:
+      required: true
+  - type: textarea
+    id: results
+    attributes:
+      label: Expected results
+      description: Observable outcomes, one `- [ ]` per line. Each sub-issue moves at least one of them.
+    validations:
+      required: true
